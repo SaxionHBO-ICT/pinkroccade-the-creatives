@@ -1,13 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="nl.saxion.lawikayoub.pinkroccade.MainActivity">
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
 
-</RelativeLayout>
+        <EditText
+            android:maxLines="1"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/colorText"
+            android:textColor="@color/colorText"
+            android:id="@+id/editUserName"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:autoText="false"
+            android:hint="Medewerker ID"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            />
+
+        <EditText
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/colorText"
+            android:textColor="@color/colorText"
+            android:id="@+id/editPassword"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Wachtwoord"
+            android:inputType="textPassword" />
+
+        <Button
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorText"
+            android:background="@drawable/login_button_shape"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/loginButton"
+            android:layout_gravity="center_horizontal" />
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/progressBarLogin"
+            />
+    </LinearLayout>
+
+</LinearLayout>

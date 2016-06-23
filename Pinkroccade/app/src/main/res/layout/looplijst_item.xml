@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:id="@+id/startTijd"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="18:30" />
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:id="@+id/duur"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:text="180" />
+
+        <TextView
+
+            android:layout_marginRight="5dp"
+            android:id="@+id/client"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:text="Visser-Zekveld, T" />
+
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/straat"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Van de Veldelaan 35" />
+
+            <TextView
+                android:id="@+id/postcode"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="9700 GR GRONINGEN" />
+
+            <TextView
+                android:id="@+id/tel"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="tel: 050-5674839 " />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/activiteit"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Persoonlijke verzorging" />
+    </LinearLayout>
+
+</LinearLayout>

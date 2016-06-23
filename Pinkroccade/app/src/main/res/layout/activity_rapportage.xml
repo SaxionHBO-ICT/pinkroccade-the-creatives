@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="4dp"
+            android:id="@+id/rapportagePeriode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Periode van 01-12-2015 t/m 31-12-2015 "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <nl.saxion.lawikayoub.pinkroccade.View.ArcProgress
+            android:id="@+id/productiviteitProgress"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            custom:arc_bottom_text="Productiviteit voor:"
+            custom:arc_bottom_text_size="13dp"
+            custom:arc_max="100"
+            custom:arc_progress="4"
+            custom:arc_stroke_width="7dp"
+            custom:arc_text_color="@color/colorPrimaryDark"
+
+
+
+            />
+        <TextView
+            android:textSize="13dp"
+            android:id="@+id/rapportageMedewerkerNaam"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maduro-Koolman,L."
+            android:layout_marginBottom="8dp"
+            />
+
+        <nl.saxion.lawikayoub.pinkroccade.View.ArcProgress
+            android:id="@+id/gezichtenProgress"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            custom:arc_bottom_text="Gezichten per client"
+            custom:arc_bottom_text_size="13dp"
+            custom:arc_max="10"
+            custom:arc_progress="3"
+            custom:arc_stroke_width="7dp"
+            custom:arc_text_color="@color/colorPrimaryDark"
+
+
+            />
+
+    </LinearLayout>
+</LinearLayout>

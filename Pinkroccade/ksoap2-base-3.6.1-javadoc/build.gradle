@@ -1,0 +1,2 @@
+configurations.create("default")
+artifacts.add("default", file('ksoap2-base-3.6.1-javadoc.jar'))

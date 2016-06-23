@@ -1,0 +1,5 @@
+configurations.create("default2")
+artifacts.add("default2", file('android-ws-combine.jar'))
+apply plugin: 'java'
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
